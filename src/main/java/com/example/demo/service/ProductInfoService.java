@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.DAO.ProductInfo;
+import com.example.demo.dataobject.ProductInfo;
 import com.example.demo.dto.CartDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

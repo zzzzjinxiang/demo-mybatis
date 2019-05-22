@@ -1,6 +1,6 @@
 package com.example.demo.repository;
 
-import com.example.demo.DAO.SellInfo;
+import com.example.demo.dataobject.SellInfo;
 import com.example.demo.util.KeyUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -23,7 +23,7 @@ public class SellInfoRepositoryTest {
         sellInfo.setOpenid("abc");
         sellInfo.setUsername("老王");
         sellInfo.setPassword("123456");
-        sellInfo.setSellId(KeyUtil.genUniqueKey());
+        sellInfo.setSellId(KeyUtil.getUniqueKey());
 
         SellInfo res = sellInfoRepository.save(sellInfo);
         assertNotNull(res);

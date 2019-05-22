@@ -1,6 +1,6 @@
-package com.example.demo.DAO.mapper;
+package com.example.demo.dataobject.mapper;
 
-import com.example.demo.DAO.ProductCategory;
+import com.example.demo.dataobject.ProductCategory;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;

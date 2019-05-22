@@ -1,9 +1,8 @@
 package com.example.demo.dto;
 
 
-import com.example.demo.DAO.OrderDetail;
+import com.example.demo.dataobject.OrderDetail;
 import com.example.demo.util.Date2LongSerializer;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.Data;
 import java.math.BigDecimal;

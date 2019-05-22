@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.DAO.ProductCategory;
+import com.example.demo.dataobject.ProductCategory;
 
 import java.util.List;
 
