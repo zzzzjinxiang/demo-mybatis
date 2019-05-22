@@ -23,7 +23,7 @@ public class SellInfoRepositoryTest {
         sellInfo.setOpenid("abc");
         sellInfo.setUsername("老王");
         sellInfo.setPassword("123456");
-        sellInfo.setSellId(KeyUtil.genUniquewKey());
+        sellInfo.setSellId(KeyUtil.genUniqueKey());
 
         SellInfo res = sellInfoRepository.save(sellInfo);
         assertNotNull(res);

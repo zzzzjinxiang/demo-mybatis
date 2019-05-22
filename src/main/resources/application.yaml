@@ -1,12 +1,12 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: xxxxx
-    password: xxxxxx
-    url: jdbc:mysql://xxxxxx?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: 123456
+    url: jdbc:mysql://10.210.28.177:3306/sell?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
 server:
   servlet:
-    context-path: /xxxxx
+    context-path: /sell
 logging:
   level:
     com.example.demo.DAO.mapper: trace
