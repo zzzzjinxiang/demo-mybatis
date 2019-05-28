@@ -16,6 +16,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -31,8 +32,8 @@ public class BuyerProductController {
     private CategoryService categoryService;
 
     @GetMapping("/list")
-    @Cacheable(cacheNames = "product",key = "123")
-    public ResultVO list(){
+    @Cacheable(cacheNames = "product",key = "sellerId",unless = "#result.getCode() !=0")
+    public ResultVO list(@RequestParam("sellerId") String sellerId){
         //1.查询在架商品
         List<ProductInfo> productInfoList = productInfoService.findUpAll();
         //2.类目查询

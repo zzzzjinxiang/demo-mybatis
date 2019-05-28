@@ -3,9 +3,9 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456
-    url: jdbc:mysql://mysqladdress?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://10.210.28.177:3306/sell?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
   redis:
-    host: redisadd
+    host: 10.210.28.177
     port: 6379
     jedis:
       pool:
